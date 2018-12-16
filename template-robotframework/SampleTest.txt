@@ -1,11 +1,11 @@
 *** Settings ***
-Metadata          server    http://127.0.0.1:8080    # Automation Testing Dojo server address (change to real IP before starting)
+Metadata          server    http://127.0.0.1:8080/at-dojo    # Automation Testing Dojo server address (change to real IP before starting)
 Metadata          userName    JohnDoe    # It should be registered name in the Automation Testing Dojo server. Please change to the name which you have registered with on AT game
 Library           Selenium2Library
 
 *** Variables ***
 ${BROWSER}        firefox
-${SERVER}         http://localhost:8080
+${SERVER}         http://localhost:8080/at-dojo
 
 *** Test Cases ***
 FindProductList

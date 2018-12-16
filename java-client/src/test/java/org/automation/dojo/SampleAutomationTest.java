@@ -13,11 +13,11 @@ import static junit.framework.Assert.fail;
 /**
  * @author serhiy.zelenin
  */
-@ReportTo(server = "http://localhost:8080", userName = "Sergey")
+@ReportTo(server = "http://127.0.0.1:8080/at-dojo", userName = "apofig")
 @RunWith(DojoTestRunner.class)
 public class SampleAutomationTest {
     private WebDriver webDriver;
-    private static String baseUrl = "http://localhost:8080";
+    private static String baseUrl = "http://127.0.0.1:8080/at-dojo";
     
     @Before
     public void setUp() {
